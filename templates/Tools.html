@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my website</title>
+    
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="static/style.css">
+    <!-- <link rel="stylesheet" href="script.js">     -->
+    <script src="script.js">   </script>
+
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <h1 class="heading">Description of Tools</h1>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="{{ url_for('home') }}">home</a></li>
+            <li><a href="{{ url_for('Labs') }}">Labs</a></li>
+            <li><a href="{{ url_for('Tools') }}">Tools</a></li>
+            <li><a href="{{ url_for('plan') }}">plan</a></li>
+            <li><a href="{{ url_for('contact') }}">contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- service section starts  -->
+
+<section class="service">
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fab fa-jenkins"></i>
+            <h3>Jenkins</h3>
+            <p>Jenkins is an open source continuous integration/continuous delivery and deployment (CI/CD) automation software DevOps tool written in the Java programming language.</p>
+        </div>
+
+        <div class="box">
+            <i class="fab fa-docker"></i>
+            <h3>Docker</h3>
+            <p>Docker is an open-source project with a friendly-whale logo that facilitates the deployment of applications in software containers.It allows multiple containers to run at a time</p>
+        </div>
+
+        <div class="box">
+            <i class="fab fa-git"></i>
+            <h3>Git</h3>
+            <p>Git is a DevOps tool used for source code management. It is a free and open-source version control system used to handle small to very large projects efficiently.</p>
+        </div>
+
+        <div class="box">
+            <i class="fab fa-slack"></i>
+            <h3>Slack</h3>
+            <p>Whether teams are looking to improve cross-functional collaboration, respond to incidents faster, or simplify complex processes, Slack provides the platform to support it.</p>
+        </div>
+
+        <div class="box">
+            <i class="fab fa-kickstarter-k"></i>
+            <h3>Kubernetes</h3>
+            <p>Kubernetes is a reliable container cluster management tool.Anywhere from load testing websites,to moving business and online applications to production, Kubernetes clusters can manage it.</p>
+        </div>
+
+        <div class="box">
+            <i class="fab fa-aws"></i>
+            <h3>AWS</h3>
+            <p>As the lead cloud computing platform, AWS is the primary profit driver for Amazon. AWS provides servers, storage, networking, remote computing, email, mobile development, and security.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- service section ends -->
+
+
+<div class="footer">
+
+    <!-- <div class="box-container">
+
+        <div class="box">
+            <h3>why choose us?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, illum voluptatum. Unde, consequuntur at. Molestias culpa suscipit explicabo possimus iusto?</p>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">service</a>
+            <a href="#">plan</a>
+            <a href="#">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe us for latest updates</p>
+            <form action="">
+                <input type="email" placeholder="your email">
+                <input type="submit" class="btn" value="subscribe">
+            </form>
+        </div> -->
+
+    <!-- </div> -->
+
+    <h1 class="credit"> created by <a href="#">Devops team</a> | all rights reserved. </h1>
+
+</div>
+
+
+
+
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

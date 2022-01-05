@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="static/style.css">
+    <!-- <link rel="stylesheet" href="script.js">     -->
+    <script src="script.js">   </script>
+
+    
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <h1 class="heading">Register Here</h1>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="{{ url_for('home') }}">home</a></li>
+            <li><a href="{{ url_for('Labs') }}">Labs</a></li>
+            <li><a href="{{ url_for('Tools') }}">Tools</a></li>
+            <li><a href="{{ url_for('plan') }}">plan</a></li>
+            <li><a href="{{ url_for('contact') }}">contact</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+
+
+<!-- header section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact">
+
+    <form action="">
+
+        <input type="text" class="box" placeholder="name">
+        <input type="email" class="box" placeholder="email">
+        <input type="password" class="box" placeholder="password">
+        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="Details"></textarea>
+    
+        <input type="submit" class="btn" value="send message">
+    
+    </form>
+    
+    <div class="content">
+    
+        <h3>contact us for More updates</h3>
+        <p> You have any doubts,regarding to Course,Tools,fees...etc.Contact here</p>
+        <div class="icons">
+            <i class="fas fa-map-marker-alt"></i> Rayachoti,kadapa(dist),Andhra Pradesh.
+        </div>
+        <div class="icons">
+            <i class="fas fa-globe"></i> www.devopsTeam.com
+        </div>
+        <div class="icons">
+            <i class="fas fa-phone"></i> +91 xxxxx xxxxx
+        </div>
+    
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<div class="footer">
+
+    <!-- <div class="box-container">
+
+        <div class="box">
+            <h3>why choose us?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, illum voluptatum. Unde, consequuntur at. Molestias culpa suscipit explicabo possimus iusto?</p>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">service</a>
+            <a href="#">plan</a>
+            <a href="#">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe us for latest updates</p>
+            <form action="">
+                <input type="email" placeholder="your email">
+                <input type="submit" class="btn" value="subscribe">
+            </form>
+        </div> -->
+
+    </div>
+
+    <h1 class="credit"> created by <a href="#">Devops team</a> | all rights reserved. </h1>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
