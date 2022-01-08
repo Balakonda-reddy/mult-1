@@ -30,66 +30,40 @@
             <li><a href="{{ url_for('home') }}">home</a></li>
             <li><a href="{{ url_for('Labs') }}">Labs</a></li>
             <li><a href="{{ url_for('Tools') }}">Tools</a></li>
-            <li><a href="{{ url_for('plan') }}">plan</a></li>
-            <li><a href="{{ url_for('contact') }}">contact</a></li>
+            <li><a href="{{ url_for('plan') }}">Registered Members</a></li>
+            <li><a href="{{ url_for('Registration') }}">Register Here</a></li>
         </ul>
     </nav>
 
 </header>
 
+<center>
+
+    <section class="plan">
+            <font size="3">
+            <table border="10">
+            <table style="width:60%" align="centre">
+    
+                    <tr>
+                    <tr style="height:40px">
+                            <th>Name</th>
+                            <th>Email</th>
+                    </tr>
+                {% for i in userDetails %}
+                <tr>
+                <tr style="height:30px">
+    
+                    <td>{{i[0]}}</td>
+                    <td>{{i[1]}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+    
+    </section>
+</center>
+    
 <!-- header section ends -->
 
-<!-- plan section starts  -->
-
-<section class="plan">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3 class="title">basic plan</h3>
-            <div class="price">
-                <h1>₹1k<span>/mo</span></h1>
-            </div>
-            <ul>
-                <li>Online classes</li>
-                <li>Class recordings</li>
-                <li>No Mentor Facility</li>
-                <li>No Practice Tests</li>
-            </ul>
-            <a href="#"><button class="btn">check out</button></a>
-        </div>
-
-        <div class="box">
-            <h3 class="title">standard plan</h3>
-            <div class="price">
-                <h1>₹2k<span>/mo</span></h1>
-            </div>
-            <ul>
-                <li>Online classes</li>
-                <li>Class recordings</li>
-                <li>Mentor Facility</li>
-                <li>No Practice Tests</li>
-            </ul>
-            <a href="#"><button class="btn">check out</button></a>
-        </div>
-
-        <div class="box">
-            <h3 class="title">premium plan</h3>
-            <div class="price">
-                <h1>₹3k<span>/mo</span></h1>
-            </div>
-            <ul>
-                <li>Online classes</li>
-                <li>Class recordings</li>
-                <li>Mentor Facility</li>
-                <li>Practice Tests</li>
-            </ul>
-            <a href="#"><button class="btn">check out</button></a>
-        </div>
-
-    </div>
-
-</section>
 
 <!-- plan section ends -->
 
